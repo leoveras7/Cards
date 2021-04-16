@@ -1,0 +1,45 @@
+﻿@page "/cards"
+@inject HttpClient Http
+
+
+@using RefazendoADemo.Features.Cards
+
+@inherits BlazorStateComponent
+
+<div class="alert alert-secondary">
+    <h3>DeckId: @State.DeckId</h3>
+    <h4>Remaining cards: @State.RemainingCards</h4>
+    <button class="btn btn-outline-primary " type="button" @onclick="@HandleRandoMize">RandoMize</button>
+</div>
+
+<div class="jumbotron">
+    @if (State.Loading)
+    {
+        <div>
+            <img src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" style="max-width: 50px;" alt="Loading" />
+        </div>
+    }
+    else
+    {
+        <div>
+            <button class="btn btn-outline-primary " type="button" @onclick="@HandleShowCard">Show</button>
+            <h3>Card: @State.CurrentCard</h3>
+            <h3>Suit: @State.CurrentSuit</h3>
+            <img src="@State.CurrentImage" style="width: 226px; height: 314px;" alt="Card image" />
+        </div>
+    }
+</div>
+
+@code {
+    CardState State => GetState<CardState>();
+
+    private async Task HandleRandoMize()
+    {
+        await Mediator.Send(new CardState.RandoMizeAction());
+    }
+
+    private async Task HandleShowCard()
+    {
+        await Mediator.Send(new CardState.ShowAction(State.DeckId));
+    }
+}

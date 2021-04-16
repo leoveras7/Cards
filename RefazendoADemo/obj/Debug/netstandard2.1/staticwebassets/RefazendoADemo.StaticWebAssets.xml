@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="E:\Projetos\Blazor\RefazendoADemo\RefazendoADemo\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="_content/Blazor-State" Path="C:\Users\leove\.nuget\packages\blazor-state\3.4.0\build\..\staticwebassets\" />
+</StaticWebAssets>

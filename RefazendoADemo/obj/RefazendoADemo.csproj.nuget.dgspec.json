@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Projetos\\Blazor\\RefazendoADemo\\RefazendoADemo\\RefazendoADemo.csproj": {}
+  },
+  "projects": {
+    "E:\\Projetos\\Blazor\\RefazendoADemo\\RefazendoADemo\\RefazendoADemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projetos\\Blazor\\RefazendoADemo\\RefazendoADemo\\RefazendoADemo.csproj",
+        "projectName": "RefazendoADemo",
+        "projectPath": "E:\\Projetos\\Blazor\\RefazendoADemo\\RefazendoADemo\\RefazendoADemo.csproj",
+        "packagesPath": "C:\\Users\\leove\\.nuget\\packages\\",
+        "outputPath": "E:\\Projetos\\Blazor\\RefazendoADemo\\RefazendoADemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\leove\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.0.14:8084/nuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/ntZROmu8hdCjgv3sbjBdUqbsSj3SusVYtlenAZLBrhv5KaM1kg/api": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Blazor-State": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
